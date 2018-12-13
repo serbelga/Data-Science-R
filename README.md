@@ -1,4 +1,4 @@
 # Introduction to R
 
-## Documentation
+##Documentation
 - [Basic](Basic/Documentation.md)
