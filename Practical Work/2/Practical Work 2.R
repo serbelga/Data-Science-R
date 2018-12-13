@@ -1,8 +1,14 @@
 # Load Resources
 setwd('/Users/sergiobelda/Desktop/dasresources/')
+
+# Airquality
 airquality <- read.csv('airquality.csv', sep = ',', header = TRUE)
-
-
+# Cars
+cars <- read.csv('cars.csv', sep = ',', header = TRUE)
+cars <- subset(cars, select =- X)
+# Titanic
+titanic <- read.csv('titanic.csv', sep = ',', header = TRUE)
+titanic <- subset(titanic, select =- X)
 
 # 3
 # 3.1 Extract the first 2 rows of the data frame and print them to the console. 
@@ -31,7 +37,9 @@ factor(airquality$Ozone,levels=c("bin1", "bin2", "bin3", "bin4", "bin5", "binNA"
 airquality$Ozone[is.na(airquality$Ozone)]<-"binNA"
 
 # 4.2 Discretise the Solar column into four bins of equal size and a fifth bin for NA.
-
+discretize(airquality$Solar.R, method = "interval", breaks = 4, labels = c("bin1", "bin2", "bin3", "bin4"))->airquality$Solar.R
+factor(airquality$Solar.R,levels=c("bin1", "bin2", "bin3", "bin4", "binNA"))-> airquality$Solar.R
+airquality$Solar.R[is.na(airquality$Solar.R)]<-"binNA"
 
 # 4.3 Create a new column AbsDay from the columns Month and Day such that counts the number of days passed from Month=5 and Day=1.
 as.Date(with(airquality, paste(airquality$Day, airquality$Month, sep = "-")), "%d-%m")->airqualityDate
