@@ -76,4 +76,6 @@ titanic[rep(rownames(titanic), titanic$Freq),1:2]->titanic2
 sample(nrow(airquality), 50)
 airquality[sample(nrow(airquality), 50), ]
 
+# Package splitstackshape
 # 6.2 Using the data frame ‘air’, perform a stratified random sampling of 5 examples of each month
+stratified(airquality, group = 'Month', size = 5)
