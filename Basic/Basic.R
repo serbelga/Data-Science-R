@@ -17,6 +17,11 @@ assign("a", 1)
 # Empty: NULL
 # Denotes an empty object, is skipped (i.e., removed) for Vectors
 
+# Conversion
+as.numeric(FALSE)
+as.numeric(TRUE)
+as.numeric("1")
+as.numeric("A")
 
 # Type (double, character, logical, ...)
 typeof(a)
