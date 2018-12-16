@@ -4,6 +4,20 @@ a<-1
 a=1
 assign("a", 1)
 
+# Infinite: Inf
+# We can operate normally with them
+
+# Undefined: NaN
+# Denotes a numeric number that is not a number: 0/0
+
+# Missing: NA
+# Denotes a not available value
+# It is independent of the data type
+
+# Empty: NULL
+# Denotes an empty object, is skipped (i.e., removed) for Vectors
+
+
 # Type (double, character, logical, ...)
 typeof(a)
 
