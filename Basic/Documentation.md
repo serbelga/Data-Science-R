@@ -25,7 +25,7 @@ Result:
 ```
 r <- 2-1
 
-Result
+Result:
 [1] 1
 ```
 
@@ -34,7 +34,7 @@ Result
 ```
 p <- 1*2
 
-Result
+Result:
 [1] 2
 ```
 
@@ -43,6 +43,6 @@ Result
 ```
 d <- 4/2
 
-Result
+Result:
 [1] 2
 ```
