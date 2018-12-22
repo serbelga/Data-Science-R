@@ -49,6 +49,7 @@ Result:
 
 ## Conversion
 
+### Number
 ```
 as.numeric(FALSE)
 
@@ -63,4 +64,23 @@ as.numeric("A")
 
 Result:
 [1] 1
+```
+
+### Logic
+```
+as.logical(0)
+as.logical("FALSE")
+as.logical("F")
+
+Result:
+[1] FALSE
+```
+
+```
+as.logical(1)
+as.logical("TRUE")
+as.logical("T")
+
+Result:
+[1] TRUE
 ```
