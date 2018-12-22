@@ -46,3 +46,21 @@ d <- 4/2
 Result:
 [1] 2
 ```
+
+## Conversion
+
+```
+as.numeric(FALSE)
+
+Result:
+[1] 0
+```
+
+```
+as.numeric(TRUE)
+as.numeric("1")
+as.numeric("A")
+
+Result:
+[1] 1
+```
